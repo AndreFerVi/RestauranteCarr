@@ -1,0 +1,282 @@
+/* Estilo base */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #ff5740;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.cart-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cart-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.cart-count {
+    background-color: #ff4429;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.8em;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    display: none; /* Oculta a notificação quando não há itens */
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+/* Estilo dos produtos */
+.product-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s;
+}
+
+.product:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 1.5em;
+}
+
+.product p {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+    color: #ff5740;
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff5740;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff4429;
+    transform: scale(1.05);
+}
+
+/* Estilo do carrinho */
+.cart {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.cart h2 {
+    margin-top: 0;
+    color: #4CAF50;
+}
+
+.cart-items .cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.cart-item-img {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.cart-item p {
+    flex: 1;
+}
+
+.cart-item .btn {
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cart-item .btn:hover {
+    background-color: #d32f2f;
+}
+
+.total {
+    text-align: right;
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #4CAF50;
+}
+
+.checkout {
+    text-align: right;
+    margin-top: 20px;
+}
+
+
+.btn-checkout {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-checkout:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Estilo do card de cliente */
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #4CAF50;
+}
+
+.card p {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+
+.user-icon {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.user-icon img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Adicione estas regras ao seu arquivo style.css */
+
+.empty-cart-message {
+    color: #ff0000; /* Cor vermelha para destacar */
+    font-size: 1.2em;
+    text-align: center;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+/* Estilos para a página de finalização de compra */
+.order-received {
+    text-align: center;
+    padding: 50px;
+}
+
+.order-received h2 {
+    color: #28a745; /* Verde para sucesso */
+    margin-bottom: 20px;
+}
+
+.order-received p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.order-status {
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.btn-return {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-return:hover {
+    background-color: #0056b3;
+}

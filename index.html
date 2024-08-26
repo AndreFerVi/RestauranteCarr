@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Carr - Produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="user-icon">
+            <a href="cliente.html">
+                <img src="images/user-icon.png" alt="Usuário">
+            </a>
+        </div>
+        <h1>Restaurante Carr</h1>
+        <nav>
+            <div class="cart-icon">
+                <a href="carrinho.html">
+                    <img src="images/cart-icon.png" alt="Carrinho">
+                    <span id="cart-count" class="cart-count">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <ul class="product-list">
+            <li class="product">
+                <img src="images/salada.jpg" alt="Salada Fresca" class="product-img">
+                <div class="product-info">
+                    <h3>Salada Fresca</h3>
+                    <p>Preço: R$ 10,00</p>
+                    <a href="#" class="btn" onclick="adicionarAoCarrinho('Salada Fresca', 10, 'images/salada.jpg')">Adicionar ao Carrinho</a>
+                </div>
+            </li>
+            <li class="product">
+                <img src="images/feijoada.jpg" alt="Feijoada" class="product-img">
+                <div class="product-info">
+                    <h3>Feijoada</h3>
+                    <p>Preço: R$ 20,00</p>
+                    <a href="#" class="btn" onclick="adicionarAoCarrinho('Feijoada', 20, 'images/feijoada.jpg')">Adicionar ao Carrinho</a>
+                </div>
+            </li>
+            <li class="product">
+                <img src="images/macarrao.jpg" alt="Macarrão" class="product-img">
+                <div class="product-info">
+                    <h3>Macarrão</h3>
+                    <p>Preço: R$ 15,00</p>
+                    <a href="#" class="btn" onclick="adicionarAoCarrinho('Macarrão', 15, 'images/macarrao.jpg')">Adicionar ao Carrinho</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Carr - Carrinho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="user-icon">
+                <a href="cliente.html">
+                    <img src="images/user-icon.png" alt="Usuário">
+                </a>
+            </div>
+            <h1>Restaurante Carr</h1>
+            <nav>
+                <a href="index.html">Produtos</a>
+                <div class="cart-icon">
+                    <a href="carrinho.html">
+                        <img src="images/cart-icon.png" alt="Carrinho">
+                        <span id="cart-count" class="cart-count">0</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="cliente-info" class="card">
+            <h2>Informações do Cliente</h2>
+            <p>Nome: <span id="cliente-nome"></span></p>
+            <p>Telefone: <span id="cliente-telefone"></span></p>
+            <p>Endereço: <span id="cliente-endereco"></span></p>
+        </div>
+        
+        <div class="cart">
+            <h2>Seu Carrinho</h2>
+            <div id="empty-cart-message" class="empty-cart-message" style="display: none;">
+                Seu carrinho está vazio.
+            </div>
+            <div id="cart-items" class="cart-items"></div>
+            <div class="total">
+                <p>Total: R$ <span id="cart-total">0,00</span></p>
+            </div>
+            <div class="checkout">
+                <a href="finalizar-compra.html" class="btn-checkout">Finalizar Compra</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
